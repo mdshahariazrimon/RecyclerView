@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         FoodAdapter adapter=new FoodAdapter(this,foods);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
+        linearLayoutManager.setOrientation(RecyclerView.HORIZONTAL);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(adapter);
     }
